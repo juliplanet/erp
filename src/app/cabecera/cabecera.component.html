@@ -1,0 +1,28 @@
+<!-- Código de estructura de cabecera 'Top navbar' de Bootstrap (Examples > Navbar static > (botón derecho ratón) Ver código fuente de la página -->
+
+<nav class="navbar navbar-expand-md navbar-light bg-light mb-4">
+  <a class="navbar-brand" routerLink="/">ERP APP</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"> <!-- 'routerLinkActive' añade clase '.active' a elemento solo cuando se accede a componente definido en 'routerLink' | '[routerLinkActiveOptions]="{exact:true}"' asegura que '.active' solo se añada cuando componente 'Inicio' esté activo (de otra forma este elemento en particular siempre tenía añadida clase '.active' incluso al cargar otro componente) -->
+        <a class="nav-link" routerLink="/">Inicio <span class="sr-only">(current)</span></a> <!-- atributo 'routerLink' es directiva Angular que redirige automáticamente a ruta de componente ('/' para ruta vacía o componente inicial), es decir, realiza misma función que href="" pero sin proceso lento de carga al pasar de una página a otra) -->
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/ventas">Ventas</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/compras">Compras</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/contabilidad">Contabilidad</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/recursos-humanos">Recursos Humanos</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+

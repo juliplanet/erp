@@ -1,0 +1,52 @@
+.menu-inicio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box {
+    margin-bottom: 40px;
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 500ms all; /* transición al posar cursor sobre elemento ('hover') */
+}
+
+.box span {
+    font-size: 80px;
+}
+
+.box p {
+    color: white;
+    font-size: 26px;
+}
+
+.rojo {background-color: #d9534f;}
+.rojo:hover {background-color: darkred;}
+.rojo span {color: #b94642;}
+.verde {background-color: #5cb85c;}
+.verde:hover {background-color: darkgreen;}
+.verde span {color: #4ca84c;}
+.azul {background-color: #428bca;}
+.azul:hover {background-color: darkblue;}
+.azul span {color: #2d6ca3;}
+
+.titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.titulo span {
+    font-size: 20px;
+}
+
+.formulario {
+    padding: 20px 20px 40px;
+}
